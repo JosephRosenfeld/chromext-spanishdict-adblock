@@ -1,0 +1,13 @@
+{
+  "name": "Spanish Dict AdBlock",
+  "description": "Blocks the 'you have an adblocker' model",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://www.spanishdict.com/*"],
+      "run_at": "document_end",
+      "js": ["content-script.js"]
+    }
+  ]
+}
